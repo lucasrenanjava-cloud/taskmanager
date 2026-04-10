@@ -189,7 +189,7 @@ Objetivo: projeto rodando com estrutura base e banco configurado.
 - [x] Configurar banco de dados local e variáveis de ambiente
 - [x] Criar primeira migration Flyway: V1__create_tb_users.sql
 - [x] Configurar Swagger/OpenAPI
-- [ ] Commit inicial com README base
+- [x] Commit inicial com README base
 
 Entregável: aplicação sobe sem erros, Swagger acessível, banco conectado.
 
