@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -38,7 +39,8 @@ public class User implements UserDetails {
     @CreationTimestamp
     private LocalDateTime criadoEm;
 
-
+    @UpdateTimestamp
+    private LocalDateTime atualizadoEm;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -47,11 +49,11 @@ public class User implements UserDetails {
 
     @Override
     public String getPassword() {
-        return "";
+        return senha;
     }
 
     @Override
     public String getUsername() {
-        return "";
+        return email;
     }
 }

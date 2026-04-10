@@ -189,7 +189,7 @@ Objetivo: projeto rodando com estrutura base e banco configurado.
 - [x] Configurar banco de dados local e variáveis de ambiente
 - [x] Criar primeira migration Flyway: V1__create_tb_users.sql
 - [x] Configurar Swagger/OpenAPI
-- [ ] Commit inicial com README base
+- [x] Commit inicial com README base
 
 Entregável: aplicação sobe sem erros, Swagger acessível, banco conectado.
 
@@ -198,14 +198,14 @@ Entregável: aplicação sobe sem erros, Swagger acessível, banco conectado.
 ### Sprint 1 — Autenticação JWT (4–5 dias)
 Objetivo: usuário consegue se cadastrar e receber token JWT.
 
-- [ ] Criar entidade User e migration Flyway
-- [ ] Implementar AuthService (register e login)
-- [ ] Implementar JwtService (gerar e validar token)
-- [ ] Implementar JwtAuthFilter
-- [ ] Configurar SecurityConfig com rotas públicas e protegidas
-- [ ] Criar AuthController com /auth/register e /auth/login
-- [ ] Tratamento de exceções: e-mail duplicado, credenciais inválidas
-- [ ] Testes unitários: AuthService
+- [x] Criar entidade User e migration Flyway
+- [x] Implementar AuthService (register e login)
+- [x] Implementar JwtService (gerar e validar token)
+- [x] Implementar JwtAuthFilter
+- [x] Configurar SecurityConfig com rotas públicas e protegidas
+- [x] Criar AuthController com /auth/register e /auth/login
+- [x] Tratamento de exceções: e-mail duplicado, credenciais inválidas
+- [x] Testes unitários: AuthService
 
 Entregável: cadastro e login funcionando, token JWT retornado e validado.
 
