@@ -40,7 +40,7 @@ public class TarefaController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<TarefaResponse> buscarPorId(@PathVariable UUID id,
+    public ResponseEntity<TarefaResponse> buscarPorId(@PathVariable Long id,
                                                       @AuthenticationPrincipal User usuario) {
         return ResponseEntity.ok(tarefaService.buscarPorId(id, usuario));
     }
@@ -70,21 +70,21 @@ public class TarefaController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<TarefaResponse> atualizar(@PathVariable UUID id,
+    public ResponseEntity<TarefaResponse> atualizar(@PathVariable Long id,
                                                     @RequestBody @Valid TarefaRequest request,
                                                     @AuthenticationPrincipal User usuario) {
         return ResponseEntity.ok(tarefaService.atualizar(id, request, usuario));
     }
 
     @PatchMapping("/{id}/status")
-    public ResponseEntity<TarefaResponse> atualizarStatus(@PathVariable UUID id,
+    public ResponseEntity<TarefaResponse> atualizarStatus(@PathVariable Long id,
                                                           @RequestBody @Valid AtualizarStatusRequest request,
                                                           @AuthenticationPrincipal User usuario) {
         return ResponseEntity.ok(tarefaService.atualizarStatus(id, request, usuario));
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deletar(@PathVariable UUID id,
+    public ResponseEntity<Void> deletar(@PathVariable Long id,
                                         @AuthenticationPrincipal User usuario) {
         tarefaService.deletar(id, usuario);
         return ResponseEntity.noContent().build();

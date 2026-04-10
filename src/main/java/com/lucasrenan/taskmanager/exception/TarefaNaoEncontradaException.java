@@ -1,9 +1,7 @@
 package com.lucasrenan.taskmanager.exception;
 
-import java.util.UUID;
-
 public class TarefaNaoEncontradaException extends RuntimeException {
-    public TarefaNaoEncontradaException(UUID id) {
+    public TarefaNaoEncontradaException(Long id) {
         super("Tarefa não encontrada com id: " + id);
     }
 }

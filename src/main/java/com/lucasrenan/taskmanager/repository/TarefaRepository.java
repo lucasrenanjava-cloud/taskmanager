@@ -12,8 +12,7 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.UUID;
 
-@Repository
-public interface TarefaRepository extends JpaRepository<Tarefa, UUID> {
+public interface TarefaRepository extends JpaRepository<Tarefa, Long> {
 
     Page<Tarefa> findByUsuarioId(UUID usuarioId, Pageable pageable);
 
