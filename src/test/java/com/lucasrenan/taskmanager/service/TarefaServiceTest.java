@@ -55,8 +55,6 @@ class TarefaServiceTest {
         tarefa.setUsuario(usuario);
     }
 
-    // ===== CRIAR =====
-
     @Test
     void deveCriarTarefaComSucesso() {
         TarefaRequest request = new TarefaRequest("Estudar Spring Boot", "Revisar documentação", Prioridade.ALTA, LocalDate.now().plusDays(7));
@@ -83,8 +81,6 @@ class TarefaServiceTest {
 
         assertEquals(Prioridade.MEDIA, response.prioridade());
     }
-
-    // ===== BUSCAR POR ID =====
 
     @Test
     void deveBuscarTarefaPorIdComSucesso() {
@@ -116,8 +112,6 @@ class TarefaServiceTest {
                 () -> tarefaService.buscarPorId(1L, outroUsuario));
     }
 
-    // ===== ATUALIZAR STATUS =====
-
     @Test
     void deveAtualizarStatusComSucesso() {
         AtualizarStatusRequest request = new AtualizarStatusRequest(StatusTarefa.EM_ANDAMENTO);
@@ -131,8 +125,6 @@ class TarefaServiceTest {
         assertEquals(StatusTarefa.EM_ANDAMENTO, response.status());
         verify(tarefaRepository, times(1)).save(any(Tarefa.class));
     }
-
-    // ===== DELETAR =====
 
     @Test
     void deveDeletarTarefaComSucesso() {
@@ -155,8 +147,6 @@ class TarefaServiceTest {
 
         verify(tarefaRepository, never()).delete(any(Tarefa.class));
     }
-
-    // ===== LISTAR ATRASADAS =====
 
     @Test
     void deveListarTarefasAtrasadas() {
