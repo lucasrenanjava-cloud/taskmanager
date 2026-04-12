@@ -214,14 +214,14 @@ Entregável: cadastro e login funcionando, token JWT retornado e validado.
 ### Sprint 2 — CRUD de Tarefas (5–6 dias)
 Objetivo: usuário autenticado gerencia suas tarefas.
 
-- [ ] Criar entidade Tarefa e migration Flyway
-- [ ] Implementar TarefaService (criar, listar, buscar, atualizar, deletar)
-- [ ] Garantir isolamento: usuário só acessa suas próprias tarefas
-- [ ] Implementar filtros por status, prioridade, prazo vencido e busca por título
-- [ ] Paginação nas listagens
-- [ ] Criar TarefaController com todos os endpoints
-- [ ] Validações com Bean Validation
-- [ ] Testes unitários: TarefaService
+- [x] Criar entidade Tarefa e migration Flyway
+- [x] Implementar TarefaService (criar, listar, buscar, atualizar, deletar)
+- [x] Garantir isolamento: usuário só acessa suas próprias tarefas
+- [x] Implementar filtros por status, prioridade, prazo vencido e busca por título
+- [x] Paginação nas listagens
+- [x] Criar TarefaController com todos os endpoints
+- [x] Validações com Bean Validation
+- [x] Testes unitários: TarefaService
 
 Entregável: CRUD completo e funcional, filtros operando, testes passando.
 
@@ -230,12 +230,12 @@ Entregável: CRUD completo e funcional, filtros operando, testes passando.
 ### Sprint 3 — Testes e Qualidade (4–5 dias)
 Objetivo: cobertura mínima de 70% nos services.
 
-- [ ] Testes unitários AuthService — cenários de sucesso e falha
-- [ ] Testes unitários TarefaService — CRUD, filtros, isolamento por usuário
-- [ ] Testes de integração nos controllers principais com @SpringBootTest
-- [ ] Revisar e padronizar respostas de erro
-- [ ] Revisar migrations Flyway
-- [ ] Atualizar Swagger com descrições e exemplos
+- [x] Testes unitários AuthService — cenários de sucesso e falha
+- [x] Testes unitários TarefaService — CRUD, filtros, isolamento por usuário
+- [x] Testes de integração nos controllers principais com @SpringBootTest
+- [x] Revisar e padronizar respostas de erro
+- [x] Revisar migrations Flyway
+- [x] Atualizar Swagger com descrições e exemplos
 
 Entregável: suíte de testes verde, cobertura maior ou igual a 70%, documentação Swagger completa.
 
@@ -244,13 +244,13 @@ Entregável: suíte de testes verde, cobertura maior ou igual a 70%, documentaç
 ### Sprint 4 — Agente IA com LangChain4j (6–7 dias)
 Objetivo: usuário conversa com agente que gerencia tarefas por linguagem natural.
 
-- [ ] Configurar LangChain4j com Gemini API
-- [ ] Criar entidade MensagemChat e migration Flyway
-- [ ] Implementar TarefaTools com Tool Calling (criar, listar, atualizar status)
-- [ ] Implementar TarefaAgent com memória de conversa por usuário
-- [ ] Criar AgenteController com /agente/chat e /agente/historico
-- [ ] Garantir que o agente só acessa dados do usuário autenticado
-- [ ] Testes unitários: AgenteService
+- [x] Configurar LangChain4j com Gemini API
+- [x] Criar entidade MensagemChat e migration Flyway
+- [x] Implementar TarefaTools com Tool Calling (criar, listar, atualizar status)
+- [x] Implementar TarefaAgent com memória de conversa por usuário
+- [x] Criar AgenteController com /agente/chat e /agente/historico
+- [x] Garantir que o agente só acessa dados do usuário autenticado
+- [x] Testes unitários: AgenteService
 
 Entregável: agente responde em linguagem natural e executa operações reais no banco.
 
@@ -259,11 +259,11 @@ Entregável: agente responde em linguagem natural e executa operações reais no
 ### Sprint 5 — Refinamento e Deploy (3–4 dias)
 Objetivo: projeto pronto para portfólio.
 
-- [ ] Dockerizar a aplicação com Dockerfile e docker-compose.yml
-- [ ] README completo com instruções de instalação, endpoints e exemplos
-- [ ] Revisar e limpar código
-- [ ] Garantir que todas as variáveis sensíveis estão em .env
-- [ ] Testar fluxo completo: cadastro, login, criar tarefa, conversar com agente
+- [x] Dockerizar a aplicação com Dockerfile e docker-compose.yml
+- [x] README completo com instruções de instalação, endpoints e exemplos
+- [x] Revisar e limpar código
+- [x] Garantir que todas as variáveis sensíveis estão em .env
+- [x] Testar fluxo completo: cadastro, login, criar tarefa, conversar com agente
 
 Entregável: projeto rodando com docker-compose up, README profissional, pronto para o GitHub.
 
@@ -279,7 +279,6 @@ Entregável: projeto rodando com docker-compose up, README profissional, pronto 
 | Sprint 3 | Testes e Qualidade | 4–5 dias |
 | Sprint 4 | Agente IA (LangChain4j) | 6–7 dias |
 | Sprint 5 | Refinamento e Deploy | 3–4 dias |
-| **Total** | | **25–31 dias** |
 
 ---
 
