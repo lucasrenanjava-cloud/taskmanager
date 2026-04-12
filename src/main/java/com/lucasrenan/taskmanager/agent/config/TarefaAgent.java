@@ -1,6 +1,6 @@
-package com.lucasrenan.taskmanager.agent.tools;
+package com.lucasrenan.taskmanager.agent.config;
 
-import com.lucasrenan.taskmanager.agent.config.TarefaAssistant;
+import com.lucasrenan.taskmanager.agent.tools.TarefaTools;
 import com.lucasrenan.taskmanager.model.entity.MensagemChat;
 import com.lucasrenan.taskmanager.model.entity.User;
 import com.lucasrenan.taskmanager.model.enums.RoleChat;
